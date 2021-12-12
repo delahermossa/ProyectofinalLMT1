@@ -1,0 +1,86 @@
+<html>
+
+<head>
+
+    <title>La belleza de los instrumentos</title>
+    <style>
+        #portaFoto {
+            display: block;
+            height: 50vh;
+            width: 50vw;
+            
+            
+        }
+
+        #auxFoto {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            
+    
+        }
+
+        #portaImagen {
+            background-color: lightslategrey;
+            height: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            
+            
+            
+        }
+
+        @media screen and (orientation:landscape) {
+            #portaFoto {
+                max-height: 800px;
+                max-width: 1200px;
+               
+            }
+        }
+
+        @media screen and (orientation:portrait) {
+            #portaFoto {
+                max-height: 900px;
+                max-width: 600px;
+                
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="portaImagen">
+        <picture id="portaFoto">
+            <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./Foto1horizontal.heic"
+                    type="image/heic">
+                <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./Foto1horizontal.webp"
+                    type="image/webp">
+                <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./Foto1horizontal.jpg" type="image/jpeg">
+                <source media="(orientation: portrait) and (min-width:1200px)" srcset="./foto2vertical.heic" type="image/heic">
+                <source media="(orientation: portrait) and (min-width:1200px)" srcset="./foto2vertical.webp" type="image/webp">
+                <source media="(orientation: portrait) and (min-width:1200px)" srcset="./foto2vertical.jpg" type="image/jpg">
+        
+               
+                <source media="(orientation: landscape) and (min-width: 800px)" srcset="./Foto3horizontal.heic"
+                    type="image/heic">
+                <source media="(orientation: landscape) and (min-width: 800px)" srcset="./Foto3horizontal.webp"
+                    type="image/webp">
+                <source media="(orientation: landscape) and (min-width: 800px)" srcset="./Foto3horizontal.jpg" type="image/jpeg">
+                <source media="(orientation: portrait) and (min-width: 600px)" srcset="./Foto4vertical.heic" type="image/heic">
+                <source media="(orientation: portrait) and (min-width: 600px)" srcset="./Foto4vertical.webp" type="image/webp">
+                <source media="(orientation: portrait) and (min-width: 600px)" srcset="./Foto4vertical.jpg" type="image/jpg">
+                
+        
+         
+        
+                <img id="auxFoto" alt="Musica" title="Instrumentos" src="./Foto1horizontal.jpg" />
+        </picture>
+    </div>
+
+</body>
+
+
+</html>
